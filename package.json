@@ -1,0 +1,22 @@
+{
+  "name": "node-async-context",
+  "version": "0.0.1",
+  "description": "node 异步上下文管理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunkeysun/node-async-context.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "sunkeysun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunkeysun/node-async-context/issues"
+  },
+  "homepage": "https://github.com/sunkeysun/node-async-context#readme"
+}
