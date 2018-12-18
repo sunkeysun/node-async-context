@@ -1,7 +1,7 @@
 {
   "name": "node-async-context",
-  "version": "0.0.7",
-  "description": "node 异步上下文管理",
+  "version": "0.0.9",
+  "description": "node 异步上下文容器",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,8 @@
     "url": "git+https://github.com/sunkeysun/node-async-context.git"
   },
   "keywords": [
-    "node"
+    "node",
+    "context"
   ],
   "author": "sunkeysun",
   "license": "MIT",

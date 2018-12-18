@@ -18,6 +18,7 @@ function destroy(asyncId) {
     context.destroyByAsyncId(asyncId)
 }
 
+// hook 为单例子
 let hook = null
 
 module.exports = {
@@ -29,17 +30,5 @@ module.exports = {
         hook.enable()
 
         return context
-    },
-
-    run(cb) {
-        process.nextTick(cb)
-    },
-
-    enable() {
-        hook.enable()
-    },
-
-    disable() {
-        hook.disable()
     },
 }
