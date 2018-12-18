@@ -4,10 +4,11 @@
  * @author: sunkeysun
  */
 const ah = require('async_hooks')
-const context = require('./_context')
+const context = require('./lib/_context')
 
 function init(asyncId, type, triggerAsyncId) {
-    const triggerContext = context.getByAsyncId[triggerAsyncId]
+    const triggerContext = context.getByAsyncId(triggerAsyncId)
+
     if (triggerContext) {
         context.setByAsyncId(asyncId, triggerContext)
     }
@@ -20,7 +21,7 @@ function destroy(asyncId) {
 let hook = null
 
 module.exports = {
-    createContext() {
+    create() {
         if (hook) {
             throw new Error('context has been created !')
         }
@@ -30,7 +31,7 @@ module.exports = {
         return context
     },
 
-    wrap(cb) {
+    run(cb) {
         process.nextTick(cb)
     },
 

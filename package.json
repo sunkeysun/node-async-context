@@ -1,6 +1,6 @@
 {
   "name": "node-async-context",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "description": "node 异步上下文管理",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/sunkeysun/node-async-context/issues"
   },
-  "homepage": "https://github.com/sunkeysun/node-async-context#readme"
+  "homepage": "https://github.com/sunkeysun/node-async-context#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
