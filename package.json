@@ -1,6 +1,6 @@
 {
   "name": "node-async-context",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "node 异步上下文容器",
   "main": "index.js",
   "scripts": {
